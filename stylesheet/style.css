@@ -143,3 +143,12 @@ html {
   color: #D23333;
 }
 
+.footer-copyright a {
+  font-weight: 100;
+  color: #f7a601;
+}
+
+.footer-copyright a:hover {
+  text-decoration: none;
+}
+
