@@ -1,0 +1,50 @@
+#drapeau{
+  height: 950px;
+  background-color: lightblue;
+  border-radius: 5px;
+  padding: 10px;
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animation{
+  /*position: absolute;*/
+  display: flex;
+  width:80%;
+  /*transition: all 2s ease-out;*/
+}
+
+.partie{
+  height: 300px;
+  width: 33%;
+  border: 1px solid black;
+  margin-bottom: 8px;
+  transition: all 2s ease-out ;
+}
+
+#noir{
+  background: black;
+}
+
+#jaune{
+  background: yellow;
+}
+
+#rouge{
+  background: red;
+}
+
+.hauteur{
+  height: 700px;
+  box-shadow: 9px 30px 60px -21px black;
+}
+
+/*.x{
+  transform: translateX(11%);
+}
+
+.y{
+  transform: translate(11%, 93%);
+}*/

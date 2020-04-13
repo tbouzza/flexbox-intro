@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Techies Lab - 🇧🇪</title>
+  <link rel="stylesheet" href="stylesheet/prism.css">
+  <link rel="stylesheet" href="stylesheet/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+  <!-- https://images.unsplash.com/photo-1519122295308-bdb40916b529?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1568&q=80 -->
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(https://images.unsplash.com/photo-1501349800519-48093d60bde0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);">
+    <div id="class-languages">
+      <i class="fab fa-html5" style="color: #f84820"></i>
+      <i class="fab fa-css3-alt" style="color: #1970b5"></i>
+    </div>
+    <div class="container">
+      <div class="main">
+        <img src="images/logo.png" alt="">
+        <div class="class-title">
+          <h1>FLEXBOX</h1>
+          <h4>intro</h4>
+        </div>
+      </div>
+      <p>Le but de cette séance est de créer le drapeau belge 🇧🇪 en utilisant la propriété CSS <strong>FLEXBOX</strong></p>
+      <a class="btn btn-primary tl-button" href="#challenge" role="button">Commencer !</a>
+    </div>
+  </div>
+
+  <div class="container" id="challenge">
+
+    <div class="gamification">
+      <div class="progress">
+        <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <div class="alert alert-danger" role="alert">
+        A simple danger alert—check it out!
+      </div>
+    </div>
+
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link done task" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Etape 1 - Dossier et fichiers
+            </button>
+          </h2>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            <p>Pour cette séance, nous allons commencer avec un tout nouveau dossier.</p>
+            <ol>
+              <li><p>Crée un nouveau dossier <code class="language-js">drapeau</code>. Fais un click droit et selectionne <code style="background-color:lightgrey; padding: 2px 4px;">New Folder</code>.</p></li>
+              <li>
+                <p>Ensuite glisse le dossier dans ton éditeur de texte (Sublime Text, par exemple), et crée les deux fichiers habituels:</p>
+                <pre class="language-treeview">
+                  <code class="language-treeview">
+                    drapeau/
+                    |-- index.html
+                    |-- style.css
+                  </code>
+                </pre>
+              </li>
+            </ol>
+
+            <p>👇🏽 Voici une animation qui te montre comment proceder:</p>
+            <img class="flexgif" src="images/start.gif" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed task" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Etape 2 - Lier ton fichier CSS et ton fichier HTML
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="alert alert-warning" role="alert">
+              <p>
+                <i class="far fa-square"></i>
+                Petit rappel :
+              </p>
+              <p >Pour selectionner des boites d'un fichier codé en <code class="language-js">HTML</code> depuis un fichier codé en <code class="language-js">CSS</code>, on doit commencer par lier les deux fichiers.</p>
+            </div>
+            <p>Dans la section <code class="language-html">&lt;head></code> de ton fichier <code class="language-js">index.html</code>, ajoute la ligne 5 afin de le lier avec le fichier <code class="language-js">style.css</code>.</p>
+            <pre class="line-numbers language-html">
+              <code class="language-html">&lt;!DOCTYPE html>
+                &lt;html>
+                &lt;head>
+                  ...
+                  &lt;link href="style.css" rel="stylesheet" />
+                &lt;/head>
+                </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingFour">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed task" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Etape 3 - Créer le porte drapeau
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="alert alert-warning" role="alert">
+              <p>
+                <i class="far fa-square"></i>
+                Petit rappel de vocabulaire:
+              </p>
+              <img src="https://techieslab.github.io/toilet-paper_instructions/assets/anatomie-element-html.png" alt="" style="margin: 0 auto;">
+            </div>
+            <p>Afin de bien visualiser notre drapeau, nous allons créer une grande boite <code class="language-js">div</code> qui aura un attribut <code class="language-js">id</code> ayant la valeur <code>porte-drapeau</code>. Cette boite va servir de porte drapeau, comme son nom l'indique 👀.</p>
+            <pre class="line-numbers language-html">
+              <code class="language-html">&lt;body>
+                &lt;div id="porte-drapeau">
+                &lt;/div>
+              &lt;/body></code>
+            </pre>
+            <div class="alert alert-primary" role="alert">
+              🤔 Pourquoi utiliser un <code class="language-js">id</code> ?
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed task" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Etape 4 - Styler le porte drapeau
+            </button>
+          </h2>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+          <div class="card-body">
+            <p>Selectionnons notre porte drapeau dans notre fichier <code class="language-js">style.css</code> et donnons lui un peu de style à l'aide de plusieurs propriétés CSS 👘 </p>
+            <div class="alert alert-warning" role="alert">
+              <p>
+                <i class="far fa-square"></i>
+                Petit rappel de vocabulaire:
+              </p>
+              <pre class="line-numbers language-css">
+                <code class="language-css">selecteur{
+                  propriété: valeur;
+                }</code>
+              </pre>
+              <hr>
+              <p >Pour selectionner une boite avec un <code class="language-js">id</code>, on utilise le <code class="language-js">#</code></p>
+            </div>
+            <pre class="line-numbers language-css">
+              <code class="language-css">#porte-drapeau{
+                height: 950px;
+                background-color: lightblue;
+                border-radius: 5px;
+                padding: 10px;
+              }</code>
+            </pre>
+            <div class="alert alert-primary" role="alert">
+              👉🏽 Maintenant, tu peux faire un click droit et <code style="background-color:lightgrey; padding: 2px 4px;">Open in Browser</code> afin de visualiser le résultat.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed task" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Etape 5 - Créer les 3 parties du drapeau
+            </button>
+          </h2>
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+          <div class="card-body">
+            <p>Maintenant il faut créer le drapeau 💪🏽</p>
+            <p>Le drapeau belge est composé de 3 parties qui sont identiques en tous points <strong>SAUF</strong> pour la
+              <span style='display: block;'>
+                <span class="color" style="color: #dc3545">c</span>
+                <span class="color" style="color: #f104bc">o</span>
+                <span class="color" style="color: #007bff">u</span>
+                <span class="color" style="color: #20c997">l</span>
+                <span class="color" style="color: #17a2b8">e</span>
+                <span class="color" style="color: #28a745">u</span>
+                <span class="color" style="color: #ffc107">r</span>
+              </span>
+            </p>
+            <p>Nous allons donc créer trois <code class="language-js">div</code> qui vont avoir une <code class="language-js">class</code> appellée <code>partie</code>.</p>
+            <pre class="line-numbers language-html">
+              <code class="language-html">&lt;body>
+                &lt;div id="porte-drapeau">
+                  &lt;div class="partie">&lt;/div>
+                  &lt;div class="partie">&lt;/div>
+                  &lt;div class="partie">&lt;/div>
+                &lt;/div>
+              &lt;/body></code>
+            </pre>
+            <div class="alert alert-primary" role="alert">
+              🤔 Pourquoi utiliser des <code class="language-js">class</code> ?
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed task" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              Etape 6 - Styler les parties du drapeau
+            </button>
+          </h2>
+        </div>
+        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+          <div class="card-body">
+            <p>A présent, nous alons devoir attribuer des propriétés CSS aux parties du drapeau afin de les voir.</p>
+            <div class="alert alert-warning" role="alert">
+              <p>
+                <i class="far fa-square"></i>
+                Petit rappel :
+              </p>
+              <p >Pour selectionner une boite avec une <code class="language-js">class</code>, on utilise le  <code class="language-js">.</code></p>
+            </div>
+            <pre class="line-numbers language-css">
+              <code class="language-css">.partie{
+                height: 300px;
+                width: 30%;
+                border: 1px solid black;
+                margin-bottom: 8px;
+              }</code>
+            </pre>
+            <div class="alert alert-primary" role="alert">
+              ☝🏽 Comment sont placées les parties de notre drapeau? <strong>Pourquoi?</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingSeven">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed task" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              <span>Etape 7 - Colorer les parties du drapeau</span>
+              <span class="badge badge-primary">Quizz</span>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="alert alert-primary" role="alert">
+              🤔 Comment va t on faire en sorte de colorer individuellement chaque partie de notre drapeau ? <small><em>( click sur la bonne réponse)</em></small>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingSeven_1">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven_1" aria-expanded="false" aria-controls="collapseSeven_1">
+                    1️⃣ En utilisant une <code class="language-js">class</code>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseSeven_1" class="collapse 7" aria-labelledby="headingSeven_1" data-parent="#collapseSeven">
+                <div class="card-body" style="background: #ffa07a3d;">
+                  <p>❌  <strong>FAUX</strong></p>
+                  <small>Les <code class="language-js">class</code> sont utilisées lorsque des propriétées <code class="language-js">CSS</code> sont
+                  appliquées à plusieurs boites à la fois. Or dans notre cas, chaque partie du drapeau a une couleur qui lui est <strong>unique</strong>.</small>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingSeven_2">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven_2" aria-expanded="false" aria-controls="collapseSeven_2">
+                    2️⃣ En utilisant un <code class="language-js">id</code>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseSeven_2" class="collapse" aria-labelledby="headingSeven_2" data-parent="#collapseSeven">
+                <div class="card-body" style="background: #20c9971c;">
+                  <p>✅  <strong>CORRECT</strong></p>
+                  <small>Nous allons pouvoir selectionner une partie de notre drapeau à la fois, et lui donner une couleur spécifique, en attribuant à celle-ci un <code class="language-js">id</code> unique.</small>
+                  <pre class="line-numbers language-css">
+                    <code class="language-css">#noir{
+                      background-color: black;
+                    }
+                    #jaune{
+                      background-color: yellow;
+                    }
+                    #rouge{
+                      background-color: red;
+                    }</code>
+                  </pre>
+                  <br>
+                  <p>⚠️ N'oublie pas d'attribuer le bon <code class="language-js">id</code> à chaque <code>partie</code> : <pre><code class="language-html">&lt;div class="partie">&lt;/div></code></pre></p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingSeven_3">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven_3" aria-expanded="false" aria-controls="collapseSeven_3">
+                    3️⃣ L'ordinateur va le faire tout seul
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseSeven_3" class="collapse" aria-labelledby="headingSeven_3" data-parent="#collapseSeven">
+                <div class="card-body" style="background: #ffa07a3d;">
+                  <p>❌  <strong>FAUX</strong> 🤦🏽‍♀️</p>
+                  <small>Nous n'en sommes pas encore la! C'est pour cette raison que les
+                  Dev. existent. Mais qui sait? Peut etre que tu vas être la personne qui developpera cet ordinateur 🖖🏽.</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link task collapsed" type="button" data-toggle="collapse" data-target="#collapseHeigth" aria-expanded="false" aria-controls="collapseHeigth">
+              Etape 8 - Flexbox
+            </button>
+          </h2>
+        </div>
+        <div id="collapseHeigth" class="collapse" aria-labelledby="headingHeigth" data-parent="#accordionExample">
+          <div class="card-body">
+            <p>👏🏽 <strong>Bravo</strong>!</p>
+            <p>Il est temps de faire de notre drapeau, le drapeau belge!</p>
+            <p>Pour y arriver, on va utiliser une propriété CSS qui s'appelle <code>flexbox</code>. Dans ton fichier <code class="language-js">style.css</code> ajoute la ligne 3 au bon endroit.</p>
+            <pre class="line-numbers language-css">
+              <code class="language-css">#porte-drapeau{
+                ...
+                display: flex;
+              }</code>
+            </pre>
+            <br>
+            <p>👇🏽 Voilà le résultat auquel tu devrais arriver : </p>
+            <img class="flexgif" src="images/flex.gif" alt="">
+            <div class="alert alert-primary" role="alert">
+              🤓 Si tu es vraiment attentif, tu remarques que ce n'est pas exactement
+              le résultat que tu obtiens. <strong>Pourquoi ?</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link task collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+              <span>Etape 9 - Aligner le drapeau au centre</span>
+              <span class="badge badge-warning">Difficile 🏆</span>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+          <div class="card-body">
+            <p>Nous aimerions que le drapeau se trouve au centre du porte drapeau <small><em>(au centre de la boite bleue)</em></small></p>
+            <div class="alert alert-primary" role="alert">
+              <h4 class="alert-heading">
+                <i class="fas fa-info-circle"></i>
+                Lecture
+              </h4>
+              Un.e Dev. passe beaucoup de temps à lire de la documentation 🤓. Pour trouver la solution à cette étape, il va te falloir aller sur  <a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/3298561-faites-votre-mise-en-page-avec-flexbox#/id/r-3298711" rel="noopener noreferrer" target="_blank" id="task-nine" class="alert-link">ce site</a>, et essayer d'y trouver l'information dont tu as besoin.
+              <hr>
+              <p class="mb-0">N'hésites surtout pas à essayer differentes propriétés, à te
+              tromper, et puis réessayer avec autre chôse. Ca fait partie du jeux 👩🏽‍💻.</p>
+
+            </div>
+            <p>👇🏽 Voici une animation qui te montre ce à quoi il faut arriver :</p>
+            <img src="images/align.gif" alt="" class="flexgif">
+            <p class="solution">
+              <button class="btn btn-primary solution-button"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#solutionNine"
+                      aria-expanded="false"
+                      aria-controls="solutionNine"
+                      disabled>Solution</button>
+              <span data-toggle="tooltip" title="Pas si vite 😂 Tu dois d'abord lire la documentation 📚, et tester dans ton code!"><i class="fas fa-question"></i></span>
+            </p>
+            <div class="collapse" id="solutionNine">
+              <div class="card card-body">
+                <ol>
+                  <li>
+                    <p>On va commencer par demander à notre <code class="language-css">#porte-drapeau</code> <small>la boite parent</small> de faire en sorte que l'ensemble de son contenu <small>les boites enfants</small> : <pre><code class="language-html">&lt;div class="partie" id="...">&lt;/div></code></pre> soit centré <strong>horizontalement</strong>, en ajoutant la ligne <code>4</code>.</p>
+                  </li>
+                  <pre class="line-numbers language-css">
+                    <code class="language-css">#porte-drapeau{
+                      ...
+                      display: flex;
+                      justify-content: center;
+                    }</code>
+                  </pre>
+                  <li>
+                    <p>Ensuite on fait la même chôse, mais cette fois on centre les parties <strong>verticalement</strong> en ajoutant cette ligne de code : <code class="language-css">align-items: center;</code> au bon endroit.
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link task collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+              <span>Etape 10 - Agrandir le drapeau avec une animation</span>
+              <span class="badge badge-dark">Optionnel</span>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
+          <div class="card-body">
+            <p>🎉 <strong>Félicitations d'être arrivé aussi loin</strong>!</p>
+            <p>Nous allons maintenant donner plus de hauteur à nos parties, pour que notre drapeau ne soit pas trop plat.</p>
+            <p>👇🏽 Voilà le résultat final : </p>
+            <img class="flexgif" src="images/animate.gif" alt="">
+            <br>
+            <br>
+            <ol>
+              <li>
+                <h5><strong>Créer une nouvelle <code class="language-js">class</code>: </strong></h5>
+                <p>Pour ce faire nous allons commencer par créer une nouvelle <code class="language-css">.class</code> dans notre fichier <code class="language-js">style.css</code>.</p>
+                <pre class="line-numbers language-css">
+                  <code class="language-css">.hauteur{
+                    height: 700px;
+                  }</code>
+                </pre>
+                <p>Mais cette <code class="language-js">class</code> n'a pas encore été attribuée à nos parties dans le fichier <code class="language-js">index.html</code>. C'est fait exprès!</p>
+              </li>
+              <br>
+              <li>
+               <h5><strong>Ajouter une transition: </strong></h5>
+                <p>Nous aimerions que le changement de hauteur soit animé. Du coup, il nous faut spécifier quelque part dans notre <code class="language-js">CSS</code> que la transition entre la première hauteur et la nouvelle, se fait en quelque secondes.</p>
+                <p>Rajoute la ligne <code>3</code> au bon endroit.</p>
+                <pre class="line-numbers language-css">
+                  <code class="language-css">.partie{
+                    ...
+                    transition: height 2s ease-out;
+                  }</code>
+                </pre>
+              </li>
+              <br>
+              <li>
+               <h5><strong>Lancer l'animation: </strong></h5>
+                <p>Ouvre l'inspecteur (de préference sur <i class="fab fa-chrome"></i>), et selectionne la première partie : </p>
+                <pre><code class="language-html">&lt;div class="partie" id="noir">&lt;/div></code></pre>
+                <p>Ajoute manuellement la <code class="language-css">.hauteur</code> a cette partie</p>
+                <div class="alert alert-primary" role="alert">
+                  <h5>
+                    <i class="fas fa-info-circle"></i>
+                    Comment faire ?
+                  </h5>
+                  <ol>
+                    <li>Selectionne l'élement <code class="langauge-js">HTML</code> que tu veux transformer</li>
+                    <li>Double click sur l'attribut que tu veux changer</li>
+                    <li>Ajoute une nouvelle valeur à cet attribut</li>
+                    <li>Appuye sur <code>Enter</code> pour voir le changement.</li>
+                  </ol>
+                </div>
+                <p>Réplique ce qui est fait 👇🏽 : </p>
+                <img class="flexgif" src="images/inspect.gif" alt="">
+              </li>
+            </ol>
+            <div class="alert alert-warning" role="alert">
+              <h4 class="alert-heading">
+                <i class="fab fa-js"></i>
+                JavaScript
+              </h4>
+              Dans la pratique, les Dev. ne procedent pas de cette facon. Il existe un autre language de programmation, appelé <code class="language-js">JavaScript</code>, qui permet de manipuler les éléments <code class="language-html">HTML</code> automatiquement.
+              <strong>Mais une chôse à la fois 👩🏽‍🚀</strong>.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-links">
+      <a href="https://techieslab.be/"><i class="fas fa-globe"></i></i></a>
+      <a href="https://www.facebook.com/TechiesLabBrussels"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com/TechiesLab"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div class="footer-copyright">
+      <a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/3298561-faites-votre-mise-en-page-avec-flexbox#/id/r-3298711" rel="noopener noreferrer" target="_blank" class="alert-link copyright">
+        <i class="far fa-copyright"></i>
+        2020 Techies Lab ASBL. All rights reserved.
+      </a>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="javascript/prism.js"></script>
+  <script type="text/javascript" src="javascript/app.js"></script>
+</body>
+</html>
