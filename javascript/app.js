@@ -106,6 +106,15 @@ const enableSolution = () => {
     solutionButton.disabled = false
     solutionButton.nextElementSibling.remove()
   }, 120000 )
+
+  // Clear localStorage 1h after this action
+  setTimeout( () => {
+    localStorage.clear()
+  }, 3600000 )
 }
 
 taskNine.addEventListener('click', enableSolution)
+
+// ############################################################################
+
+
